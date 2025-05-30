@@ -98,3 +98,19 @@ var perimeter2 = function (letter, num) {
     return "Invalid Input";
 };
 console.log(perimeter2("s", 7));
+// Challenge 11: Sum of Even Numbers
+function sumOfEvenNumbers(n) {
+    if (n % 2 === 0)
+        return (n += n);
+    return n;
+}
+console.log(sumOfEvenNumbers(6));
+// Challenge 12: Multiply by Itself
+function powerUp(num, times) {
+    var power = 1;
+    for (var i = 0; i < times; i++) {
+        power *= num;
+    }
+    return power;
+}
+console.log(powerUp(2, 3));

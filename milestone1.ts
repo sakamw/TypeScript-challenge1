@@ -99,3 +99,10 @@ const perimeter2 = (letter: shape, num: number): number | string => {
   return "Invalid Input";
 };
 console.log(perimeter2("s", 7));
+
+// Challenge 11: Sum of Even Numbers
+function sumOfEvenNumbers(n: number): number {
+  if (n % 2 === 0) return (n += n);
+  return n;
+}
+console.log(sumOfEvenNumbers(6));
