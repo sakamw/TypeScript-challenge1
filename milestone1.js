@@ -32,3 +32,10 @@ var canDrive = function (name, age) {
     }
 };
 var driveStatus = canDrive("Jane", 22);
+//Largest Number
+var findLargest = function (a, b, c) {
+    var largest = Math.max(a, b, c);
+    return largest;
+};
+var largestNumber = findLargest(10, 20, 15);
+console.log(largestNumber);

@@ -35,3 +35,11 @@ const canDrive = (name: string, age: number): void => {
   }
 };
 const driveStatus = canDrive("Jane", 22);
+
+//Largest Number
+const findLargest = (a: number, b: number, c: number): number => {
+  const largest = Math.max(a, b, c);
+  return largest;
+};
+const largestNumber = findLargest(10, 20, 15);
+console.log(largestNumber);
