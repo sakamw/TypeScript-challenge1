@@ -57,3 +57,20 @@ var calculateBMI = function (weight, height) {
     return BMI;
 };
 var bmi = calculateBMI(68, 1.75);
+//Greet Based on Time
+var greetUser = function (name, hour) {
+    var hour24 = hour % 24;
+    if (hour24 >= 5 && hour24 <= 11) {
+        console.log("Good morning, ".concat(name, "!"));
+    }
+    else if (hour24 > 11 && hour24 <= 17) {
+        console.log("Good afternoon, ".concat(name, "!"));
+    }
+    else if (hour24 > 17 && hour24 <= 21) {
+        console.log("Good evening, ".concat(name, "!"));
+    }
+    else {
+        console.log("Good night, ".concat(name, "!"));
+    }
+};
+var greet = greetUser("Alice", 5);

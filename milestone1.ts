@@ -60,3 +60,19 @@ const calculateBMI = (weight: number, height: number): number => {
   return BMI;
 };
 const bmi = calculateBMI(68, 1.75);
+
+//Greet Based on Time
+const greetUser = (name: string, hour: number): void => {
+  const hour24 = hour % 24;
+
+  if (hour24 >= 5 && hour24 <= 11) {
+    console.log(`Good morning, ${name}!`);
+  } else if (hour24 > 11 && hour24 <= 17) {
+    console.log(`Good afternoon, ${name}!`);
+  } else if (hour24 > 17 && hour24 <= 21) {
+    console.log(`Good evening, ${name}!`);
+  } else {
+    console.log(`Good night, ${name}!`);
+  }
+};
+const greet = greetUser("Alice", 5);
