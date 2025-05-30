@@ -1,32 +1,32 @@
-// Sum of two numbers
+// Challenge 1: Sum of two numbers
 const sum = (a: number, b: number): number => {
   return a + b;
 };
 const result = sum(10, 20);
 console.log(result);
 
-// Convert Minutes to Seconds
+// Challenge 2: Convert Minutes to Seconds
 const convert = (minutes: number): number => {
   return minutes * 60;
 };
 const seconds = convert(5);
 console.log(seconds);
 
-// Perimeter of a Rectangle
+// Challenge 3: Perimeter of a Rectangle
 const findPerimeter = (length: number, width: number): number => {
   return 2 * (length + width);
 };
 const perimeter = findPerimeter(6, 7);
 console.log(perimeter);
 
-// Check Negative
+// Challenge 4: Check Negative
 const isNegative = (num: number): boolean => {
   return num < 0;
 };
 const checkNegative = isNegative(-5);
 console.log(checkNegative);
 
-// Can Drive
+// Challenge 5: Can Drive
 const canDrive = (name: string, age: number): void => {
   if (age >= 18) {
     console.log(`${name} can drive.`);
@@ -36,7 +36,7 @@ const canDrive = (name: string, age: number): void => {
 };
 const driveStatus = canDrive("Jane", 22);
 
-//Largest Number
+//Challenge 6: Largest Number
 const findLargest = (a: number, b: number, c: number): number => {
   const largest = Math.max(a, b, c);
   return largest;
@@ -44,7 +44,7 @@ const findLargest = (a: number, b: number, c: number): number => {
 const largestNumber = findLargest(10, 20, 15);
 console.log(largestNumber);
 
-// BMI Calculator
+// Challenge 7: BMI Calculator
 const calculateBMI = (weight: number, height: number): number => {
   const BMI = weight / (height * height);
 
@@ -61,7 +61,7 @@ const calculateBMI = (weight: number, height: number): number => {
 };
 const bmi = calculateBMI(68, 1.75);
 
-//Greet Based on Time
+// Challenge 8: Greet Based on Time
 const greetUser = (name: string, hour: number): void => {
   const hour24 = hour % 24;
 
@@ -77,7 +77,7 @@ const greetUser = (name: string, hour: number): void => {
 };
 const greet = greetUser("Alice", 5);
 
-// FizzBuzz
+// Challenge 9: FizzBuzz
 const fizzBuzzCheck = (number: number): void => {
   if (number % 3 === 0 && number % 5 === 0) {
     console.log("FizzBuzz");
@@ -90,3 +90,12 @@ const fizzBuzzCheck = (number: number): void => {
   }
 };
 const fizzBuzzResult = fizzBuzzCheck(7);
+
+// Challenge 10: Perimeter 2
+type shape = "s" | "c";
+const perimeter2 = (letter: shape, num: number): number | string => {
+  if (letter === "s") return num * 4;
+  if (letter === "c") return num * 6.28;
+  return "Invalid Input";
+};
+console.log(perimeter2("s", 7));
