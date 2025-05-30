@@ -43,3 +43,20 @@ const findLargest = (a: number, b: number, c: number): number => {
 };
 const largestNumber = findLargest(10, 20, 15);
 console.log(largestNumber);
+
+// BMI Calculator
+const calculateBMI = (weight: number, height: number): number => {
+  const BMI = weight / (height * height);
+
+  if (BMI < 18.5) {
+    console.log(`Your BMI is ${BMI.toFixed(1)} - Underwight`);
+  } else if (BMI >= 18.5 && BMI < 24.9) {
+    console.log(`Your BMI is ${BMI.toFixed(1)} - Normal weight`);
+  } else if (BMI >= 25 && BMI < 29.9) {
+    console.log(`Your BMI is ${BMI.toFixed(1)} - Overweight`);
+  } else {
+    console.log(`Your BMI is ${BMI.toFixed(1)} - Obese`);
+  }
+  return BMI;
+};
+const bmi = calculateBMI(68, 1.75);

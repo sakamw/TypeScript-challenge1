@@ -39,3 +39,21 @@ var findLargest = function (a, b, c) {
 };
 var largestNumber = findLargest(10, 20, 15);
 console.log(largestNumber);
+// BMI Calculator
+var calculateBMI = function (weight, height) {
+    var BMI = weight / (height * height);
+    if (BMI < 18.5) {
+        console.log("Your BMI is ".concat(BMI.toFixed(1), " - Underwight"));
+    }
+    else if (BMI >= 18.5 && BMI < 24.9) {
+        console.log("Your BMI is ".concat(BMI.toFixed(1), " - Normal weight"));
+    }
+    else if (BMI >= 25 && BMI < 29.9) {
+        console.log("Your BMI is ".concat(BMI.toFixed(1), " - Overweight"));
+    }
+    else {
+        console.log("Your BMI is ".concat(BMI.toFixed(1), " - Obese"));
+    }
+    return BMI;
+};
+var bmi = calculateBMI(68, 1.75);
