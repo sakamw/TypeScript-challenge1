@@ -76,3 +76,17 @@ const greetUser = (name: string, hour: number): void => {
   }
 };
 const greet = greetUser("Alice", 5);
+
+// FizzBuzz
+const fizzBuzzCheck = (number: number): void => {
+  if (number % 3 === 0 && number % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (number % 3 === 0) {
+    console.log("Fizz");
+  } else if (number % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(number.toString());
+  }
+};
+const fizzBuzzResult = fizzBuzzCheck(7);
