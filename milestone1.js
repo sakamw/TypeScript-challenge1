@@ -90,14 +90,14 @@ var fizzBuzzCheck = function (number) {
     }
 };
 var fizzBuzzResult = fizzBuzzCheck(7);
-var perimeter2 = function (letter, num) {
+var Perimeter2 = function (letter, num) {
     if (letter === "s")
         return num * 4;
     if (letter === "c")
         return num * 6.28;
     return "Invalid Input";
 };
-console.log(perimeter2("s", 7));
+console.log(Perimeter2("s", 7));
 // Challenge 11: Sum of Even Numbers
 function sumOfEvenNumbers(n) {
     if (n % 2 === 0)
@@ -114,3 +114,13 @@ function powerUp(num, times) {
     return power;
 }
 console.log(powerUp(2, 3));
+// Challenge 13: Factorial Calculator
+var Factorial = function (n) {
+    if (n < 0)
+        return "Inalid Input";
+    var result = 1;
+    for (var i = 1; i <= n; i++)
+        n *= i;
+    return result;
+};
+console.log(Factorial(0));

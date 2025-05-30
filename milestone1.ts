@@ -93,12 +93,12 @@ const fizzBuzzResult = fizzBuzzCheck(7);
 
 // Challenge 10: Perimeter 2
 type shape = "s" | "c";
-const perimeter2 = (letter: shape, num: number): number | string => {
+const Perimeter2 = (letter: shape, num: number): number | string => {
   if (letter === "s") return num * 4;
   if (letter === "c") return num * 6.28;
   return "Invalid Input";
 };
-console.log(perimeter2("s", 7));
+console.log(Perimeter2("s", 7));
 
 // Challenge 11: Sum of Even Numbers
 function sumOfEvenNumbers(n: number): number {
@@ -109,10 +109,19 @@ console.log(sumOfEvenNumbers(6));
 
 // Challenge 12: Multiply by Itself
 function powerUp(num: number, times: number): number {
-  var power = 1;
+  let power = 1;
   for (let i = 0; i < times; i++) {
     power *= num;
   }
   return power;
 }
 console.log(powerUp(2, 3));
+
+// Challenge 13: Factorial Calculator
+const Factorial = (n: number): number | string => {
+  if (n < 0) return "Inalid Input";
+  let result = 1;
+  for (let i = 1; i <= n; i++) n *= i;
+  return result;
+};
+console.log(Factorial(0));
