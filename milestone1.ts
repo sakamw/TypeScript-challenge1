@@ -125,3 +125,24 @@ const Factorial = (n: number): number | string => {
   return result;
 };
 console.log(Factorial(0));
+
+// Challenge 14: Multiple Sum
+const sumMultiples = (n: number, divisor: number): number => {
+  let sum = 0;
+  for (let i = 0; i <= n; i++) {
+    if (i % divisor === 0) sum += i;
+  }
+  return sum;
+};
+console.log(sumMultiples(10, 2));
+
+// Challenge 15: Sum of Digits
+function sumOfDigits(num: number): number {
+  let sum = 0;
+  while (num > 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+}
+console.log(sumOfDigits(123));
