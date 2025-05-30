@@ -1,0 +1,18 @@
+// Sum of two numbers
+var sum = function (a, b) {
+    return a + b;
+};
+var result = sum(10, 20);
+console.log(result);
+// Convert Minutes to Seconds
+var convert = function (minutes) {
+    return minutes * 60;
+};
+var seconds = convert(5);
+console.log(seconds);
+// Perimeter of a Rectangle
+var findPerimeter = function (lenght, width) {
+    return 2 * (length + width);
+};
+var perimeter = findPerimeter(6, 7);
+console.log(perimeter);
