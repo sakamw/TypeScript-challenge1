@@ -22,3 +22,13 @@ var isNegative = function (num) {
 };
 var checkNegative = isNegative(-5);
 console.log(checkNegative);
+// Can Drive
+var canDrive = function (name, age) {
+    if (age >= 18) {
+        console.log("".concat(name, " can drive."));
+    }
+    else {
+        console.log("".concat(name, " cannot drive."));
+    }
+};
+var driveStatus = canDrive("Jane", 22);

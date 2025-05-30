@@ -25,3 +25,13 @@ const isNegative = (num: number): boolean => {
 };
 const checkNegative = isNegative(-5);
 console.log(checkNegative);
+
+// Can Drive
+const canDrive = (name: string, age: number): void => {
+  if (age >= 18) {
+    console.log(`${name} can drive.`);
+  } else {
+    console.log(`${name} cannot drive.`);
+  }
+};
+const driveStatus = canDrive("Jane", 22);
