@@ -11,8 +11,14 @@ var convert = function (minutes) {
 var seconds = convert(5);
 console.log(seconds);
 // Perimeter of a Rectangle
-var findPerimeter = function (lenght, width) {
+var findPerimeter = function (length, width) {
     return 2 * (length + width);
 };
 var perimeter = findPerimeter(6, 7);
 console.log(perimeter);
+// Check Negative
+var isNegative = function (num) {
+    return num < 0;
+};
+var checkNegative = isNegative(-5);
+console.log(checkNegative);

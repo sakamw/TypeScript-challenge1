@@ -13,8 +13,15 @@ const seconds = convert(5);
 console.log(seconds);
 
 // Perimeter of a Rectangle
-const findPerimeter = (lenght: number, width: number): number => {
+const findPerimeter = (length: number, width: number): number => {
   return 2 * (length + width);
 };
 const perimeter = findPerimeter(6, 7);
 console.log(perimeter);
+
+// Check Negative
+const isNegative = (num: number): boolean => {
+  return num < 0;
+};
+const checkNegative = isNegative(-5);
+console.log(checkNegative);
