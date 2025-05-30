@@ -106,3 +106,13 @@ function sumOfEvenNumbers(n: number): number {
   return n;
 }
 console.log(sumOfEvenNumbers(6));
+
+// Challenge 12: Multiply by Itself
+function powerUp(num: number, times: number): number {
+  var power = 1;
+  for (let i = 0; i < times; i++) {
+    power *= num;
+  }
+  return power;
+}
+console.log(powerUp(2, 3));
